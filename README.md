@@ -13,6 +13,13 @@ Here is how to install the dependencies, and get started,
 
 And, you're good to go. You can execute any commands, or scripts and test them.
 
+## Project structure
+
+This project is structured as follows,
+
+- `notebooks` contains notebooks for training the model with proper explanations.
+- `models` contains the trained models and the output categories in a JSON file.
+
 ## Contributing
 
 Contributions, issues and feature requests are welcome. After cloning & setting up project locally, you
