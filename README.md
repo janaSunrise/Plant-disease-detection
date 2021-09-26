@@ -17,8 +17,13 @@ And, you're good to go. You can execute any commands, or scripts and test them.
 
 This project is structured as follows,
 
+- `src` contains python scripts for performing operations with the model.
 - `notebooks` contains notebooks for training the model with proper explanations.
 - `models` contains the trained models and the output categories in a JSON file.
+
+Source folder has 3 scripts, Training model, Testing model and Converting it into tflite.
+Testing model and Tflite scripts are CLI based scripts for loading, and operating with the
+model.
 
 ## Contributing
 
