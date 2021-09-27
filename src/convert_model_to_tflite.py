@@ -4,6 +4,7 @@ import os
 # Tensorflow
 import tensorflow as tf
 
+
 # Utility functions
 def convert_h5_to_tflite(model, fp):
     # Convert the model to TFLite

@@ -2,14 +2,9 @@ import json
 import os
 
 # Imports
-import numpy as np
-import pandas as pd
-
-# Visualization
 import matplotlib.pyplot as plt
 
 # Tensorflow
-import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import callbacks, layers, Model
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -25,6 +20,7 @@ input_shape = (image_size, image_size, 3)
 grid_shape = (1, image_size, image_size, 3)
 
 batch_size = 32
+
 
 # Define useful functions
 def plot_model_history(hist):
@@ -42,6 +38,7 @@ def plot_model_history(hist):
 
     # Finally show the plot
     plt.show()
+
 
 # Download dataset
 od.download("https://www.kaggle.com/vipoooool/new-plant-diseases-dataset")
@@ -147,6 +144,6 @@ plot_model_history(history.history)
 model.save("plant_disease_detection.h5")
 
 with open("categories.json", "w") as file:
-  json.dump(train_data.class_indices, file)
+    json.dump(train_data.class_indices, file)
 
 print("Saved the model and categories.")
