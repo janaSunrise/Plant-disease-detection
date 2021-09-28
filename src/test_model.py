@@ -38,6 +38,7 @@ def get_prediction(model, categories, img):
     img = img.reshape((1, 224, 224, 3))
     img = img.astype("float32") / 255.0
 
+    # Get prediction
     prediction = model.predict(img)
     class_id = prediction.argmax()
 

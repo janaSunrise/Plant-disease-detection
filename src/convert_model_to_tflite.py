@@ -14,8 +14,8 @@ def convert_h5_to_tflite(model, fp):
     # Save the model
     tflite_model_filepath = os.path.splitext(fp)[0] + ".tflite"
 
-    with open(tflite_model_filepath, "wb") as f:
-        f.write(tflite_model)
+    with open(tflite_model_filepath, "wb") as file:
+        file.write(tflite_model)
 
     print(f"Saved the model as {os.path.splitext(fp)[0]}.tflite")
 
@@ -29,9 +29,7 @@ def handle_invalid_path(filepath):
 
 if __name__ == "__main__":
     # Parser
-    parser = argparse.ArgumentParser(
-        description="Convert a Keras model to TFLite"
-    )
+    parser = argparse.ArgumentParser(description="Convert a Keras model to TFLite")
 
     # Arguments
     parser.add_argument(
