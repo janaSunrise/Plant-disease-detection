@@ -1,6 +1,6 @@
 # Plant disease detection
 
-Disease detection in plants using Deep learning and Transfer learning.
+Disease detection in plants using deep learning and transfer learning.
 
 ## Installation and usage
 
