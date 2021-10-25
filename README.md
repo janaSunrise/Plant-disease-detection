@@ -1,12 +1,12 @@
 # Plant disease detection
 
-Project for Disease detection in plants using Deep learning and transfer learning.
+Project for Disease detection in plants using deep learning and transfer learning.
 
 ## Installation and usage
 
 This project uses `pipenv` for dependency management. You need to ensure that you have pipenv installed.
 
-Here is how to install the dependencies, and get started,
+Here's how to install the dependencies, and get started,
 
 - Install dependencies using `pipenv install`
 - Run `pipenv shell` to enter the virtual environment
